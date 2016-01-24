@@ -256,7 +256,6 @@ public class RestClient {
 	public void delBuyer(Buyer buyer) {
 		getRestTemplate().delete(endpointDelBuyer(), buyer);
 
-		
 	}
 
 	// ///////////SELLER///////////////////
@@ -282,7 +281,7 @@ public class RestClient {
 
 	public void delSeller(Seller seller) {
 		getRestTemplate().delete(endpointDelSeller());
-		
+
 	}
 
 	// /////////////////ITEM/////////////////////////////
@@ -308,7 +307,7 @@ public class RestClient {
 
 	public void delItem(Item item) {
 		getRestTemplate().delete(endpointDelItem(), item);
-		
+
 	}
 
 	// /////////////////SUPPLIER//////////////////////////////////////
