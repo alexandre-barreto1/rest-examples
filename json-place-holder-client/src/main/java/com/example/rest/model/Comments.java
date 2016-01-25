@@ -5,8 +5,10 @@ public class Comments {
 	private Integer Id;
 	private String name;
 	private String email;
+	private String body;
 	
-	public Comments(Integer postId,Integer Id,String name,String email) {
+	public Comments(Integer postId,Integer Id,String name,String email,String body) {
+		this.body=body;
 		this.email=email;
 		this.Id=Id;
 		this.name=name;
@@ -43,6 +45,14 @@ public class Comments {
 
 	public void setEmail(String email) {
 		this.email = email;
+	}
+
+	public String getBody() {
+		return body;
+	}
+
+	public void setBody(String body) {
+		this.body = body;
 	}
 
 }

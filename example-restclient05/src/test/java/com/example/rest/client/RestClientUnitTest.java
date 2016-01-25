@@ -21,7 +21,6 @@ public class RestClientUnitTest {
 		String endpointListSupplier = clientSupplier.endpointListSupplier();
 		
 		String messageDeErro = "O valor do endpoint list employee é diferente do esperado";
-		// TODO ENTENDER MELHOR ESSE TESTE E O PORQUE DESSA BARRA NAO FUNCIONAR COMO EU ESPERAVA
 		String valorEsperadoBuyer = "http://localhost:8080" + "/" + "/buyer/list";
 		String valorEsperadoItem = "http://localhost:8080" + "/" + "/item/list";
 		String valorEsperadoSeller = "http://localhost:8080" + "/" + "/setler/list";

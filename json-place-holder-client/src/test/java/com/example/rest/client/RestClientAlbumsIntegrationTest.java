@@ -10,7 +10,7 @@ import com.example.rest.model.Photos;
 import com.example.rest.model.Posts;
 import com.example.rest.model.Todos;
 
-public class RestClientPostsIntegrationTest {
+public class RestClientAlbumsIntegrationTest {
 
 	@Test
 	public void url() {
@@ -18,13 +18,13 @@ public class RestClientPostsIntegrationTest {
 		RestClient restClient = new RestClient(
 				"http://jsonplaceholder.typicode.com/");
 
-		Albums[] listAlbums = restClient.listAlbums();
+		Posts[] listPosts = restClient.listPosts();
 		
 		
-		for (Albums albums : listAlbums) {
-			System.out.println(albums.getId());
+		for (Posts posts : listPosts) {
+			System.out.println(posts.getId());
 		}
-		
+
 	}
 
 }
